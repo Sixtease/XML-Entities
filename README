@@ -1,0 +1,62 @@
+XML-Entities
+
+This module provides a mapping from the standard XML entities to their Unicode
+characters. A function for decoding is provided. The mapping can be generated
+from a DTD file with entity definitions.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+The "make" command (without specified target) builds the module. In this phase,
+the entities are downloaded from the web (w3.org site by default). The script
+doing this (download-entities.pl) can be tweaked by arguments and environment
+variables. To enable interactivity during download and to set the timeout to 10
+seconds, the installation procedure would look like this:
+
+    perl Makefile.PL
+    make INTERACTIVE=1 DOWNLOAD_TIMEOUT=10
+    make test
+    make install
+
+To rebuild the entity definitions, run
+
+    perl download-entities.pl > XML/Entities/Data.pm
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc XML::Entities
+
+Documentation for the download-entities.pl script can be found in the
+POD format within itself.
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=XML-Entities
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/XML-Entities
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/XML-Entities
+
+    Search CPAN
+        http://search.cpan.org/dist/XML-Entities
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2007 Oldřich Krůza <Oldrich.Kruza@sixtease.net>
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
