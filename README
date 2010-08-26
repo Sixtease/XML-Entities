@@ -13,16 +13,9 @@ To install this module, run the following commands:
 	make test
 	make install
 
-The "make" command (without specified target) builds the module. In this phase,
-the entities are downloaded from the web (w3.org site by default). The script
-doing this (download-entities.pl) can be tweaked by arguments and environment
-variables. To enable interactivity during download and to set the timeout to 10
-seconds, the installation procedure would look like this:
-
-    perl Makefile.PL
-    make INTERACTIVE=1 DOWNLOAD_TIMEOUT=10
-    make test
-    make install
+The entity definitions are shipped with this package in the XML::Entities::Data
+module. If you find them outdated, you can rebuild the module by running the
+bin/download-entities.pl script.
 
 To rebuild the entity definitions, run
 

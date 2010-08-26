@@ -32,7 +32,7 @@ HTML::Entities, XML::Entities
 
 =head1 COPYRIGHT
 
-Copyright 2007 Oldrich Kruza Oldrich.Kruza@sixtease.net . All rights reserved.
+Copyright 2010 Jan Oldrich Kruza E<lt>sixtease@cpan.orgE<gt>. All rights reserved.
 
 This library is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.

@@ -8,9 +8,6 @@ license: perl
 distribution_type: module
 requires:
     Carp: 0
-    File::Basename: 0
-    LWP::UserAgent: 0
-    Fatal: 0
     perl: 5.008
 recommends:
     HTML::Parser: 0

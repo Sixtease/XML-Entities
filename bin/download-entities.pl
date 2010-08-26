@@ -203,8 +203,9 @@ sub char2entity {
     my $ent2char = $subname->();
     use strict;
     my %char2ent;
+    local $/ = ';';
     while (my($entity, $char) = each(%$ent2char)) {
-        $entity =~ s/;\z//;
+        chomp $entity;  # $/ eq ';' so this is just a faster version of s/;\z//
         $char2ent{$char} = "&$entity;";
     }
     return \%char2ent;
@@ -318,5 +319,18 @@ defaule (180s) timeout is used when not specified.
  DOWNLOAD_TIMEOUT=5 perl download-entities.pl > XML/Entities/Data.pm
  # 1 second timeout - ask on failure
  perl download-entities.pl --interactive --timeout 1 > XML/Entities/Data.pm
+
+=head2 Dependencies
+
+This script has dependencies that the C<XML::Entities> module does not and are
+therefore not mentioned in the META.yml file. These are C<LWP::UserAgent>,
+C<File::Basename> and C<Fatal>.
+
+=head1 COPYRIGHT
+
+Copyright 2010 Jan Oldrich Kruza E<lt>sixtease@cpan.orgE<gt>. All rights reserved.
+
+This library is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.
 
 =cut

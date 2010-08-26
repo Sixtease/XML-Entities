@@ -5,7 +5,7 @@ use 5.008;    # Unicode all over
 use Carp;
 use XML::Entities::Data;
 
-our $VERSION = '0.0307';
+our $VERSION = '1.0000';
 
 eval { require HTML::Parser };  # for fast XS implemented _decode_entities
 
@@ -159,7 +159,7 @@ HTML::Entities, XML::Entities::Data
 
 =head1 COPYRIGHT
 
-Copyright 2007 Oldrich Kruza Oldrich.Kruza@sixtease.net. All rights reserved.
+Copyright 2010 Jan Oldrich Kruza E<lt>sixtease@cpan.orgE<gt>. All rights reserved.
 
 This library is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
