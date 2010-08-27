@@ -1,8 +1,10 @@
+Build.PL
 Changes
 MANIFEST
 Makefile.PL
 META.yml
 README
+ignore.txt
 lib/XML/Entities.pm
 lib/XML/Entities/Data.pm
 lib/XML/Entities/Data.pod
