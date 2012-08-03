@@ -1,9 +1,9 @@
 --- #YAML:1.0
 name: XML-Entities
 abstract: Mapping of XML entities to Unicode
-version: 0.0307
+version: 1.0001
 author:
-    - Oldrich Kruza <sixtease@cpan.org>
+    - Jan Oldrich Kruza <sixtease@cpan.org>
 license: perl
 distribution_type: module
 requires:
